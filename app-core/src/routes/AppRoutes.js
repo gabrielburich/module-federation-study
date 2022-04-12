@@ -3,7 +3,6 @@ import {Route, Routes} from "react-router-dom";
 
 // Import the micro-frontend
 // can be lazy load to
-// TODO container não esta de pé não carrega quando tem o import..., imports condicionais?
 import SomeFeature from "some_feature_app/App";
 import WelcomeContainer from "../modules/welcome/WelcomeContainer";
 import CoreFeatureContainer from "../modules/core-feature/CoreFeatureContainer";
