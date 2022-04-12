@@ -3,7 +3,8 @@ import React from "react";
 function App() {
   return (
     <div>
-      Some feature!!
+        Some feature!! <br />
+        {sessionStorage.getItem('key')}
     </div>
   );
 }

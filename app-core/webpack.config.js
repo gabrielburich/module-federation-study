@@ -36,6 +36,10 @@ module.exports = (env, argv) => {
                     test: /\.md$/,
                     loader: "raw-loader",
                 },
+                {
+                    test: /\.css$/i,
+                    use: ["style-loader", "css-loader"],
+                },
             ],
         },
 
