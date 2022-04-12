@@ -14,5 +14,9 @@ Run `yarn start` in each module
 
 **TODO**:
 
+- [x] Micro-frontend url as env variable
 - [ ] Create a production structure with build and docker images
 - [ ] What do when a feature federated module is down
+- [ ] Commons components lib
+- [ ] Private routes and token
+- [ ] Try to use craco

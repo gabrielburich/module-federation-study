@@ -2,9 +2,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); // only add this if you don't have yet
 const { ModuleFederationPlugin } = webpack.container;
 const deps = require('./package.json').dependencies;
+require('dotenv').config({ path: './.env' });
 
 module.exports = (env, argv) => {
-    const isProduction = argv.mode === 'production';
+    // production only
+    // const isProduction = argv.mode === 'production';
 
     return {
         entry: './src/index.js',
@@ -50,7 +52,7 @@ module.exports = (env, argv) => {
             new ModuleFederationPlugin({
                 name: 'container',
                 remotes: {
-                    'some_feature_app': 'some_feature_app@http://localhost:3001/remoteEntry.js',
+                    'some_feature_app': `some_feature_app@${process.env.SOME_FEATURE_APP_URL || 'http://localhost:3001/remoteEntry.js'}`,
                 },
                 shared: {
                     ...deps,
