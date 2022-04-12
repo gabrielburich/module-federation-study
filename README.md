@@ -14,5 +14,5 @@ Run `yarn start` in each module
 
 **TODO**:
 
-[ ] - Create a production structure with build and docker images
-[ ] - What do when a feature federated module is down
+- [ ] Create a production structure with build and docker images
+- [ ] What do when a feature federated module is down
