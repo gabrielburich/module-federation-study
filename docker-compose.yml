@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+
+  some-feature-app:
+    image: some-feature-app:1.0.0
+    container_name: some-feature-app
+    ports:
+      - "3001:3001"
+    environment:
+      - 'PORT=3001'
+
+  app-core:
+    image: app-core:1.0.0
+    container_name: app-core
+    ports:
+      - "3000:3000"
+    environment:
+      - 'PORT=3000'
+

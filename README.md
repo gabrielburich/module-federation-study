@@ -16,6 +16,7 @@ Run `yarn start` in each module
 
 - [x] Micro-frontend url as env variable
 - [ ] Create a production structure with build and docker images
+- [ ] Allow access only by core
 - [ ] What do when a feature federated module is down
 - [ ] Commons components lib
 - [ ] Private routes and token
