@@ -19,4 +19,5 @@ Run `yarn start` in each module
 - [ ] What do when a feature federated module is down
 - [ ] Commons components lib
 - [ ] Private routes and token
+- [ ] I18n context, how will it work?
 - [ ] Try to use craco
